@@ -1,0 +1,16 @@
+{
+  "products": [
+    { "id": 1, "name": "Underground Max", "price": 149, "image": "http://diariodominicano.com/imagenes/6/medicamentos19.jpg","text":"jdghdgiouhdogiduhgduir"},
+    { "id": 2, "name": "Underground Max", "price": 249, "image": "http://www.galenox.com/images/farmacos/imgmeds/18350.jpg" },
+    { "id": 3, "name": "Underground Max", "price": 249, "image": "https://www.galenox.com/images/farmacos/imgmeds/19286.jpg" },
+    { "id": 4, "name": "Underground Max", "price": 249, "image": "http://www.michaellissek.com/grafiken/tamiflu.jpg" },
+    { "id": 5, "name": "Underground Max", "price": 249, "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtaHCiQNl_1hAEJW5uhwp5V3J3nYe-W2o-GaKl9JRNg15_i42N" },
+    { "id": 6, "name": "Underground Max", "price": 249, "image": "http://www.galenox.com/images/farmacos/imgmeds/18350.jpg" },
+    { "id": 7, "name": "Underground Max", "price": 249, "image": "http://www.tropiboy.com/Portals/0/1/664.jpg" },
+    { "id": 8, "name": "Underground Max", "price": 249, "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz5Oo-ghsFC6BL3aKTUtYWvh6U4QHIC6wm1rjCOb-w2s3FPluk" },
+    { "id": 9, "name": "Underground Max", "price": 249, "image": "https://cdn.genesis.pgsitecore.com/es-pe/-/media/Vicks_PE/Images/Products/PE/PE_TrataTos_Jarabe_S.jpg?v=1-201608160858" },
+    { "id": 10, "name": "PLIDAN", "price": 249, "image": "http://www.sweetms.com/thumb/220x150/8/86/8862f76dd46de730.jpg" },
+    { "id": 11, "name": "PLIDAN", "price": 249, "image": "http://www.sweetms.com/thumb/220x150/8/86/8862f76dd46de730.jpg" },
+    { "id": 12, "name": "PLIDAN", "price": 249, "image": "http://www.sweetms.com/thumb/220x150/8/86/8862f76dd46de730.jpg" }
+  ]
+}
