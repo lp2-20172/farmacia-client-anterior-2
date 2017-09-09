@@ -77,7 +77,7 @@ class User extends Component {
                     <label>
                         Cual es tu favorito
                         <select  onChange={this.handleChange}>
-                            <option value="grapefruit">roductos Belleza</option>
+                            <option value="grapefruit">productos Belleza</option>
                             <option value="lime">Analgesicos</option>
                             <option value="coconut">Inyectables</option>
                             <option value="mango">Antibiotico</option>

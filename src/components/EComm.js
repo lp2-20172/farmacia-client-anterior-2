@@ -20,7 +20,7 @@ class EComm extends Component {
 
                 <CardContent>
                     <Typography component="p">
-                        q={this.props.q}
+                       
                     </Typography>
 
                     <TextField

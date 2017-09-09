@@ -1,0 +1,19 @@
+pre, p {
+    font-size: 1.5em;
+    color: #C37FFE;
+    background-color: transparent;
+}
+
+div {
+  background-image: url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png");
+}
+
+p {
+  background-image: none;
+}
+
+.catsandstars {
+  background-image:  url("https://mdn.mozillademos.org/files/11991/startransparent.gif"), 
+                     url("https://mdn.mozillademos.org/files/7693/catfront.png");
+  background-color: transparent;
+}

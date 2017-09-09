@@ -23,8 +23,6 @@ class Header extends Component {
 				
                 <Typography type="headline">
 				
-				
-                    
 
                 </Typography>
 				
