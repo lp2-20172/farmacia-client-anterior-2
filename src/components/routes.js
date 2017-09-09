@@ -5,6 +5,7 @@ import Counter from './Counter';
 import User from './User';
 import EComm from './EComm';
 import form from './ecomm/form';
+import Proveedores from './ecomm/Proveedores';
 
 const routes = [
     {
@@ -19,9 +20,9 @@ const routes = [
         main: About
     },
     {
-        path: '/one',
-        sidebar: () => <div>one!</div>,
-        main: () => <h2>One</h2>
+        path: '/proveedores',
+        sidebar: () => <div>Proveedores!</div>,
+        main: Proveedores
     },
     {
         path: '/counters',
