@@ -32,6 +32,7 @@ class Header extends Component {
                             <li><NavLink exact to="/counters" activeClassName="selected">addProduct</NavLink></li>
                             <li><NavLink exact to="/users" activeClassName="selected">users</NavLink></li>
                             <li><NavLink exact to="/ecomms" activeClassName="selected">ecomms</NavLink></li>
+                            <li><NavLink exact to="/form" activeClassName="selected">form</NavLink></li>
                         </ul>
 					</nav>
 
