@@ -13,9 +13,43 @@ import TextField from 'material-ui/TextField';
 class Proveedores extends Component {
     render() {
         return (
-            <div>
-                Proveedores
-            </div>
+<Card>
+    <CardHeader
+        avatar={
+            <Avatar aria-label="Recipe" >
+                Add
+            </Avatar>
+    }
+        title="Agregar"
+        subheader="Productos"
+/>
+
+    <TextField
+        id="Nombre"
+        label="Proveedor"                        
+        
+        type="label"
+    />
+    <br />
+    <br />
+    <TextField
+                    id="cantidad"
+                    label=""
+                    type="date"                        
+                />
+                <br />
+                <TextField
+                    id="text"
+                    label="Empresa"
+                    label="Empresa"
+                    label="Empresa"
+                    label="Empresa"
+                    value={this.props.q}
+                    onChange={this.change}
+                    margin="normal"
+                />
+                <br />
+    </Card>
         );
     }
 }
