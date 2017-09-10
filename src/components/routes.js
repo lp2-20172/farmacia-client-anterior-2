@@ -6,7 +6,7 @@ import User from './User';
 import EComm from './EComm';
 import form from './ecomm/form';
 import almacen from './almacen';
-import Proveedores from './ecomm/Proveedores';
+import Proveedores from './Proveedores';
 
 const routes = [
     {
