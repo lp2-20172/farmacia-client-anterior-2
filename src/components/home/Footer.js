@@ -4,14 +4,14 @@ import { CardContent } from 'material-ui/Card';
 
 import Typography from 'material-ui/Typography';
 
-// import './Fonts.css';
+import './Fonts.css';
 class Footer extends Component {
     render() {
         return (
             <CardContent>
                 <Typography type="subheading" color="secondary">
                 "farmaceuticos cumpliendo una funcion de servicio"
-                <div>
+                <div><a></a>
                 <p class="catsandstars">
                 <br /> 
                  Comparte Salud

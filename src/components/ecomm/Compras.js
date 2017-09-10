@@ -17,7 +17,7 @@ class Compras extends Component {
         <CardHeader
             avatar={
                 <Avatar aria-label="Recipe" >
-                    AGREGAR
+                   J&J
                 </Avatar>
         }
             title="Agregar"
