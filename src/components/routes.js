@@ -5,6 +5,7 @@ import Counter from './Counter';
 import User from './User';
 import EComm from './EComm';
 import form from './ecomm/form';
+import almacen from './almacen';
 import Proveedores from './ecomm/Proveedores';
 
 const routes = [
@@ -42,6 +43,11 @@ const routes = [
       {
         path: '/form',
         sidebar: () => <div>form!</div>,
+        main: form
+    },
+     {
+        path: '/form',
+        sidebar: () => <div>almacen!</div>,
         main: form
     },
 
