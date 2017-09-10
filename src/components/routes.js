@@ -7,7 +7,7 @@ import EComm from './EComm';
 import form from './ecomm/form';
 import almacen from './almacen';
 import Proveedores from './ecomm/Proveedores';
-
+import Compras from './Compras';
 const routes = [
     {
         path: '/',
@@ -49,6 +49,11 @@ const routes = [
         path: '/form',
         sidebar: () => <div>almacen!</div>,
         main: form
+    },
+    {
+        path: '/Compras',
+        sidebar: () => <div>Compras!</div>,
+        main: Compras
     },
 
 ]
