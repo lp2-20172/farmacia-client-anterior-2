@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 import { CardContent } from 'material-ui/Card';
 import { connect } from 'react-redux'
-import { removeFromCart } from '../../actions/ecommAction';
+import { removeFromCart } from '../../actions/ventaAction';
 import List, {
     ListItem,
     ListItemAvatar,
@@ -67,7 +67,7 @@ ShoppingCart.propTypes = {
 
 function mapStateToProps(state) {
     return {
-        cart: state.ecomm.cart
+        cart: state.venta.cart
     }
 }
 

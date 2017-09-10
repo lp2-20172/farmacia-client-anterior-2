@@ -3,8 +3,8 @@ import About from './About';
 import Home from './Home';
 import Counter from './Counter';
 import User from './User';
-import EComm from './EComm';
-import form from './ecomm/form';
+import Venta from './Venta';
+import form from './venta/form';
 
 const routes = [
     {
@@ -34,9 +34,9 @@ const routes = [
         main: User
     },
     {
-        path: '/ecomms',
-        sidebar: () => <div>EComm!</div>,
-        main: EComm
+        path: '/venta',
+        sidebar: () => <div>Venta!</div>,
+        main: Venta
     },
       {
         path: '/form',

@@ -10,7 +10,7 @@ import AddShoppingCartIcon from 'material-ui-icons/AddShoppingCart';
 
 
 import { connect } from 'react-redux'
-import { addToCart, loadProducts } from '../../actions/ecommAction';
+import { addToCart, loadProducts } from '../../actions/ventaAction';
 
 const styles = theme => ({
     container: {
@@ -79,7 +79,7 @@ ProductList.propTypes = {
 
 function mapStateToProps(state) {
     return {
-        products: state.ecomm.products
+        products: state.venta.products
     }
 }
 

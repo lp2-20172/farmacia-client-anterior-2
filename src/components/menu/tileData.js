@@ -38,7 +38,7 @@ export const mailFolderListItems = (
         <ListItemLink to="/one" label="one" />
         <ListItemLink to="/counters" label="counters" />
         <ListItemLink to="/users" label="users" />
-        <ListItemLink to="/ecomms" label="ecomms" />
+        <ListItemLink to="/venta" label="ventas" />
         <ListItemLink to="/form" label="form" />
         
 

@@ -93,7 +93,7 @@ const styles = theme => ({
     [theme.breakpoints.up('sm')]: {
       content: {
         height: 'calc(100% - 64px)',
-        marginTop: 64,
+        marginTop: 20,
       },
     },
   },

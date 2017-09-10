@@ -1,11 +1,11 @@
-import { REPLACE_PRODUCTS, ADD_TO_CART, REMOVE_FROM_CART} from '../actions/ecommAction'
+import { REPLACE_PRODUCTS, ADD_TO_CART, REMOVE_FROM_CART} from '../actions/ventaAction'
 
 const initialState = {
 	products: [],
 	cart: []
 };
 
-const ecommReducers = (state = initialState, action) => {
+const ventaReducers = (state = initialState, action) => {
 	if (action.type === REPLACE_PRODUCTS) {
 		return {
 			...state,
@@ -26,4 +26,4 @@ const ecommReducers = (state = initialState, action) => {
 }
 
 
-export default ecommReducers
+export default ventaReducers

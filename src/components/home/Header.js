@@ -25,7 +25,6 @@ class Header extends Component {
 				
 				
                     
-
                 </Typography>
 				
 		

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import ProductList from './ecomm/ProductList';
-import ShoppingCart from './ecomm/ShoppingCart';
+import ProductList from './venta/ProductList';
+import ShoppingCart from './venta/ShoppingCart';
+
 import Grid from 'material-ui/Grid';
 import Card, { CardHeader, CardContent } from 'material-ui/Card'
 import Avatar from 'material-ui/Avatar'
@@ -11,7 +12,7 @@ import Paper from 'material-ui/Paper';
 
 import { getList } from '../actions/userAction'
 
-class EComm extends Component {
+class Venta extends Component {
   render() {
     return (
       <div>
@@ -40,7 +41,6 @@ class EComm extends Component {
 
             
         <Grid container >
-
               
               <ProductList />
                  
@@ -53,4 +53,4 @@ class EComm extends Component {
   }
 }
 
-export default EComm;
+export default Venta;
