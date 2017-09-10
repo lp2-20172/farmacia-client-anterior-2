@@ -29,7 +29,7 @@ class User extends Component {
                 <CardHeader
                     avatar={
                         <Avatar aria-label="Recipe" >
-                            
+                            Add
                             </Avatar>
                     }
                     title="Agregar"

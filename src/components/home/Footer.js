@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { CardContent } from 'material-ui/Card';
 
 import Typography from 'material-ui/Typography';
+
 // import './Fonts.css';
 class Footer extends Component {
     render() {
