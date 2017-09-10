@@ -5,6 +5,7 @@ import Counter from './Counter';
 import User from './User';
 import EComm from './EComm';
 import form from './ecomm/form';
+import Compras from './ecomm/Compras';
 
 const routes = [
     {
@@ -18,11 +19,7 @@ const routes = [
         sidebar: () => <div>abouts!</div>,
         main: About
     },
-    {
-        path: '/one',
-        sidebar: () => <div>one!</div>,
-        main: () => <h2>One</h2>
-    },
+    
     {
         path: '/counters',
         sidebar: () => <div>Counter!</div>,
@@ -43,7 +40,11 @@ const routes = [
         sidebar: () => <div>form!</div>,
         main: form
     },
-
+    {
+        path: '/Compras',
+        sidebar: () => <div>Compras!</div>,
+        main: Compras
+    },
 ]
 
 export default routes

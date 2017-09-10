@@ -1,11 +1,12 @@
 pre, p {
     font-size: 1.5em;
-    color: #C37FFE;
+    color: white;
     background-color: transparent;
 }
 
 div {
-  background-image: url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png");
+  background-image: url("https://creatusmanualidades.es/1832/hoja-fieltro-color-verde-oscuro-1-mm-.jpg");
+  
 }
 
 p {
@@ -13,7 +14,7 @@ p {
 }
 
 .catsandstars {
-  background-image:  url("https://mdn.mozillademos.org/files/11991/startransparent.gif"), 
+  background-image:  url("http://www.colores.org.es/imagenes_colores/verde-pastel-oscuro.jpg"), 
                      url("https://mdn.mozillademos.org/files/7693/catfront.png");
   background-color: transparent;
 }

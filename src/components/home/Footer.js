@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { CardContent } from 'material-ui/Card';
 
 import Typography from 'material-ui/Typography';
-import './Fonts.css';
+// import './Fonts.css';
 class Footer extends Component {
     render() {
         return (
@@ -12,7 +12,7 @@ class Footer extends Component {
                 "farmaceuticos cumpliendo una funcion de servicio"
                 <div>
                 <p class="catsandstars">
-                This paragraph is full of cats<br />and stars.
+                <br />and stars.
                  </p>
                 <p>This paragraph is not.</p>
                 <p class="catsandstars">
