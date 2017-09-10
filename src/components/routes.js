@@ -5,10 +5,8 @@ import Counter from './Counter';
 import User from './User';
 import EComm from './EComm';
 import form from './ecomm/form';
-import Compras from './ecomm/Compras';
 import almacen from './almacen';
 import Proveedores from './ecomm/Proveedores';
-
 
 const routes = [
     {
@@ -22,15 +20,11 @@ const routes = [
         sidebar: () => <div>abouts!</div>,
         main: About
     },
-
-    
-
     {
         path: '/proveedores',
         sidebar: () => <div>Proveedores!</div>,
         main: Proveedores
     },
-
     {
         path: '/counters',
         sidebar: () => <div>Counter!</div>,
@@ -51,13 +45,6 @@ const routes = [
         sidebar: () => <div>form!</div>,
         main: form
     },
-
-    {
-        path: '/Compras',
-        sidebar: () => <div>Compras!</div>,
-        main: Compras
-    },
-
      {
         path: '/form',
         sidebar: () => <div>almacen!</div>,

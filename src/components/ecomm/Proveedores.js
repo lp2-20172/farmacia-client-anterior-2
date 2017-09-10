@@ -17,7 +17,7 @@ class Proveedores extends Component {
         <CardHeader
             avatar={
                 <Avatar aria-label="Recipe" >
-                    J&J
+                    Add
                 </Avatar>
         }
             title="Agregar"

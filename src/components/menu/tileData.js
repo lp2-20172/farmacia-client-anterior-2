@@ -20,11 +20,7 @@ const ListItemLink = ({ to, ...rest }) => (
         <ListItem button className={match ? 'selected' : ''} >
             
                 <ListItemIcon>
-
-                <InboxIcon />
-
                         <InboxIcon />
-
                 </ListItemIcon>
                 <ListItemText primary={rest.label}>
 
@@ -38,25 +34,12 @@ const ListItemLink = ({ to, ...rest }) => (
 export const mailFolderListItems = (
     <div>
         <ListItemLink to="/" label="Home" />
-
-        <ListItemLink to="/abouts" label="abouts" />
-        <ListItemLink to="/Compras" label="Compras" />
-        <ListItemLink to="/counters" label="counters" />
-        <ListItemLink to="/users" label="users" />
-        <ListItemLink to="/ecomms" label="ecomms" />
-        
-        
-
-
-
-
         <ListItemLink to="/abouts" label="Almacen" />
         <ListItemLink to="/Proveedores" label="Proveedores" />
         <ListItemLink to="/counters" label="Productos" />
         <ListItemLink to="/users" label="users" />
         <ListItemLink to="/ecomms" label="ecomms" />
         <ListItemLink to="/almacen" label="Almacen" />
-
     </div>
 );
 
