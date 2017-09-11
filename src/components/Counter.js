@@ -32,60 +32,27 @@ class User extends Component {
                             </Avatar>
                     }
                     title="Agregar"
-                    subheader="Productos"
-                />
-             
+                    subheader="Productos"/>
+
+                     <Typography component="p">
+                        q={this.props.q}
+                    </Typography>
+
                     <TextField
-                        id="precio"
-                        label="Codigo"                        
-                        
-                        type="number"
-                    />
-                    <br />
-                    <TextField
-                        id="cantidad"
-                        label="Nombre"
-                        /**value={this.props.q}
-                        onChange={this.change}**/
-                        margin="normal"
-                    />
-                    <br />
-                    <TextField
-                        id="cantidad"
-                        label="Precio"
-                        type="number"
-                    />
-                    <br />
-                    <br />
-                    <TextField
-                        id="cantidad"
-                        label=""
-                        type="date"                        
-                    />
-                    <br />
-                    <TextField
-                        id="cantidad"
-                        label="Cantidad"
+                        id="search"
+                        label="Search"
                         value={this.props.q}
                         onChange={this.change}
                         margin="normal"
                     />  
-                    <br />
-                    <label>
-                        Cual es tu favorito
-                        <select  onChange={this.handleChange}>
-                            <option value="grapefruit">roductos Belleza</option>
-                            <option value="lime">Analgesicos</option>
-                            <option value="coconut">Inyectables</option>
-                            <option value="mango">Antibiotico</option>
-                        </select>
-                        </label>
-                        <br />
-                    <Button fab color="primary" aria-label="add">
-                        <AddIcon />
-                    </Button>
+             
+                    
+                    
                     <Button color="secondary" aria-label="add">
-                        <strong> Cancelar </strong>
+                        <strong>+Agregar</strong>
+                    </Button>
+                    <Button color="default" aria-label="add">
+                        <strong>Cancelar</strong>
                     </Button>    
             </Card >
         );
