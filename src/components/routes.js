@@ -6,9 +6,9 @@ import User from './User';
 import EComm from './EComm';
 import form from './ecomm/form';
 import almacen from './almacen';
-
 import Proveedores from './Proveedores';
 import Compras from './Compras';
+import Pedidos from './Pedidos';
 
 const routes = [
     {
@@ -57,6 +57,13 @@ const routes = [
         sidebar: () => <div>Compras!</div>,
         main: Compras
     },
+
+    {
+        path: '/Pedidos',
+        sidebar: () => <div>Pedidos!</div>,
+        main: Pedidos
+    },
+
 
 ]
 
