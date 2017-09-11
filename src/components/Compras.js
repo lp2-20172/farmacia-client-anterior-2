@@ -13,6 +13,7 @@ import TextField from 'material-ui/TextField';
 class Compras extends Component {
     render() {
         return (
+    <center>
     <Card>
         <CardHeader
             avatar={
@@ -104,6 +105,7 @@ class Compras extends Component {
                     <strong> Cancelar </strong>
                 </Button>    
         </Card >
+        </center>
         );
     }
 }

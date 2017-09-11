@@ -19,7 +19,7 @@ import './index.css'
 const theme = createMuiTheme({
     palette: {
         type: 'dark',
-        primary: pink, // Purple and green play nicely together.
+        primary: green, // Purple and green play nicely together.
         secondary: {
             ...green,
             A400: '#00e677',
