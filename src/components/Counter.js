@@ -24,6 +24,7 @@ class User extends Component {
     render() {
         const {} = this.props
         return (
+            <center>
             <Card>
                 <CardHeader
                     avatar={
@@ -32,9 +33,9 @@ class User extends Component {
                             </Avatar>
                     }
                     title="Agregar"
-                    subheader="Productos"
-                />
+                    subheader="Productos"/>
              
+                    
                     <TextField
                         id="precio"
                         label="Codigo"                        
@@ -45,11 +46,7 @@ class User extends Component {
                     <TextField
                         id="cantidad"
                         label="Nombre"
-                        label="Nombre"
-                        label="Nombre"
-                        label="Nombre"
-                        value={this.props.q}
-                        onChange={this.change}
+                        
                         margin="normal"
                     />
                     <br />
@@ -77,7 +74,7 @@ class User extends Component {
                     <label>
                         Cual es tu favorito
                         <select  onChange={this.handleChange}>
-                            <option value="grapefruit">roductos Belleza</option>
+                            <option value="grapefruit">productos Belleza</option>
                             <option value="lime">Analgesicos</option>
                             <option value="coconut">Inyectables</option>
                             <option value="mango">Antibiotico</option>
@@ -91,6 +88,7 @@ class User extends Component {
                         <strong> Cancelar </strong>
                     </Button>    
             </Card >
+            </center>
         );
     }
 }

@@ -31,11 +31,7 @@ class form extends Component {
                     <TextField
                         id="cantidad"
                         label="Nombre"
-                        label="Nombre"
-                        label="Nombre"
-                        label="Nombre"
-                        value={this.props.q}
-                        onChange={this.change}
+                        
                         margin="normal"
                     />
                     <br />
@@ -55,18 +51,18 @@ class form extends Component {
                     <TextField
                         id="cantidad"
                         label="Cantidad"
-                        value={this.props.q}
-                        onChange={this.change}
+                    /**value={this.props.q}
+                        onChange={this.change}**/
                         margin="normal"
                     />  
                     <br />
                     <label>
                         Cual es tu favorito
-                        <select  onChange={this.handleChange}>
-                            <option value="grapefruit">roductos Belleza</option>
-                            <option value="lime">Analgesicos</option>
-                            <option value="coconut">Inyectables</option>
-                            <option value="mango">Antibiotico</option>
+                        <select className="form">
+                            <option value="Habitacion">Habitacion</option>
+                            <option value="Individual">Individual</option>
+                            <option value="Matrimonial">Matrimonial</option>
+                            <option value="Triple">Triple</option>
                         </select>
                         </label>
                         <br />
