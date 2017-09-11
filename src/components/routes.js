@@ -6,13 +6,10 @@ import User from './User';
 import EComm from './EComm';
 import form from './ecomm/form';
 import almacen from './almacen';
-<<<<<<< HEAD
-import Proveedores from './Proveedores';
 
-=======
-import Proveedores from './ecomm/Proveedores';
+import Proveedores from './Proveedores';
 import Compras from './Compras';
->>>>>>> 3772d9381647591770e3712335b3de0a7d7907e7
+
 const routes = [
     {
         path: '/',
