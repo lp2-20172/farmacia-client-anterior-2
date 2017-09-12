@@ -8,6 +8,7 @@ import MailIcon from 'material-ui-icons/Mail';
 import DeleteIcon from 'material-ui-icons/Delete';
 import ReportIcon from 'material-ui-icons/Report';
 
+
 import {
     Route,
     Link
@@ -40,10 +41,9 @@ export const mailFolderListItems = (
         <ListItemLink to="/users" label="users" />
         <ListItemLink to="/venta" label="ventas" />
         <ListItemLink to="/form" label="form" />
+        <ListItemLink to="/Compras" label="Compras" />
+        <ListItemLink to="/Pedidos" label="Pedidos" />
         
-
-
-
     </div>
 );
 
@@ -65,7 +65,7 @@ export const otherMailFolderListItems = (
             <ListItemIcon>
                 <ReportIcon />
             </ListItemIcon>
-            <ListItemText primary="Spam" />
+            <ListItemText primary="SALIR" />
         </ListItem>
     </div>
 );

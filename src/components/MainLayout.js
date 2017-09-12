@@ -17,7 +17,7 @@ import { mailFolderListItems, otherMailFolderListItems } from './menu/tileData';
 import Header from './home/Header';
 //import Paper from 'material-ui/Paper';
 //import Grid from 'material-ui/Grid';
-
+// import './Estilos.css';
 import {
     Switch,
     Route
@@ -173,6 +173,7 @@ class PersistentDrawer extends React.Component {
                             ))}
                             <Route component={NoMatch} />
                         </Switch>
+                        
 
                     </div>
                 </div>

@@ -43,30 +43,30 @@ class TextFields extends React.Component {
           id="name"
           label="NOMBRE"
           className={classes.textField}
-          defaultValue="NOMBRE"
+          defaultValue=""
           onChange={event => this.setState({ name: event.target.value })}
           margin="normal"
         />
         <TextField
-          id="uncontrolled"
-          label="Uncontrolled"
-          defaultValue="foo"
-          className={classes.textField}
+          id="NUMERO"
+          label="numero de compra"
+          defaultValue=""
+          className={classes.numberField}
           margin="normal"
         />
         <TextField
           required
-          id="required"
-          label="Required"
-          defaultValue="Hello World"
+          id="TIPO"
+          label="tipo de documento"
+          defaultValue=""
           className={classes.textField}
           margin="normal"
         />
         <TextField
           error
-          id="error"
-          label="Error"
-          defaultValue="Hello World"
+          id="empleado"
+          label="empleado"
+          defaultValue=""
           className={classes.textField}
           margin="normal"
         />
@@ -79,61 +79,23 @@ class TextFields extends React.Component {
           margin="normal"
         />
         <TextField
-          id="multiline-flexible"
-          label="Multiline"
+          id="proveedor"
+          label="proveedor"
           multiline
-          rowsMax="4"
-          value={this.state.multiline}
-          onChange={this.handleChangeMultiline}
+          rowsMax=""
           className={classes.textField}
           margin="normal"
         />
         <TextField
-          id="multiline-static"
-          label="Multiline"
+          id="total"
+          label="total"
           multiline
           rows="4"
-          defaultValue="Default Value"
+          defaultValue=""
           className={classes.textField}
           margin="normal"
         />
-        <TextField
-          id="helperText"
-          label="Helper text"
-          defaultValue="Default Value"
-          className={classes.textField}
-          helperText="Some important text"
-          margin="normal"
-        />
-        <TextField
-          label="With placeholder"
-          placeholder="Placeholder"
-          className={classes.textField}
-        />
-        <TextField
-          label="With placeholder multiline"
-          placeholder="Placeholder"
-          multiline
-          className={classes.textField}
-        />
-        <TextField
-        id="date"
-        label="Birthday"
-        type="date"
-        defaultValue="2017-05-24"
-        className={classes.textField}
-        InputLabelProps={{
-          shrink: true,
-        }}
-        />
-        <TextField
-        id="time"
-        label="Alarm clock"
-        type="time"
-        defaultValue="07:30"
-        className={classes.textField}
-        InputLabelProps={{
-          shrink: true,
+        
         }}
         />
         <br/>
@@ -142,10 +104,10 @@ class TextFields extends React.Component {
         <br/>
         
       <Button raised color="primary" className={classes.button}>
-        CONFIRMAR
+        ENVIAR
       </Button>
       <Button raised color="accent" className={classes.button}>
-        CANCELAR
+        ABORTAR
       </Button>
       </form>
     );
