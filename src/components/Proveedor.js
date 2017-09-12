@@ -10,98 +10,99 @@ import TextField from 'material-ui/TextField';
 
 
 
+
 class Proveedor extends Component {
     render() {
         return (
-    <Card>
-
-        
-        <h1>Agregar Proveedor</h1>
-            <Button fab color="primary" aria-label="add">
-        <AddIcon />
-        </Button>        
-
-                 <br />
-                 <br />
-
-                <TextField
-                id="Nombre"
-                label="Nombre"                        
+            <Card>
+            
                     
-                type="text"
-                />
-                <br />
-                <br />
-                <TextField
-                    id="Apellidos"
-                    label="Apellidos"                        
-                    
-                    type="text"
-                 />
-                <br />
-                <br />
-    
-                <TextField
-                    id="text"
-                    label="Empresa"
-                />
-                <br />
-                <br />
-                <TextField
-                    id="number"
-                    label="Direccion"
-                    type="text"
-                />
-                <br />
-                <br />
-                <TextField
-                    id="number"
-                    label="Documento de Identidad"
-                    type="text"
-                />
-                <br />
-                <br />
-                <TextField
-                    id="text"
-                    label="Ruc"
-                    type="text"                        
-                />
-                <br />
-                <br />
-                <br />
-                <TextField
-                    id="date"
-                    label=""
-                    type="date"                        
-                />
-                <br />
-                <br />
-               
-                <TextField
-                    id="number"
-                    label="Celular"
-                    type="number"                        
-                />
-                <br />
-                <br />
-                <TextField
-                    id="text"
-                    label="Email"
-                    type="email"                        
-                />
-                <br />
-                <br />
-
-
+                    <h1>Agregar Proveedor</h1>
+                        <Button fab color="primary" aria-label="add">
+                    <AddIcon />
+                    </Button>        
+            
+                             <br />
+                             <br />
+            
+                            <TextField
+                            id="Nombre"
+                            label="Nombre"                        
+                                
+                            type="text"
+                            />
+                            <br />
+                            <br />
+                            <TextField
+                                id="Apellidos"
+                                label="Apellidos"                        
+                                
+                                type="text"
+                             />
+                            <br />
+                            <br />
                 
-
-                <Button color="primary" aria-label="add">
-                <strong> Aceptar </strong>
-            </Button>    
-                <Button color="secondary" aria-label="add">
-                    <strong> Cancelar </strong>
-                </Button>   
-        </Card >
+                            <TextField
+                                id="text"
+                                label="Empresa"
+                            />
+                            <br />
+                            <br />
+                            <TextField
+                                id="number"
+                                label="Direccion"
+                                type="text"
+                            />
+                            <br />
+                            <br />
+                            <TextField
+                                id="number"
+                                label="Documento de Identidad"
+                                type="text"
+                            />
+                            <br />
+                            <br />
+                            <TextField
+                                id="text"
+                                label="Ruc"
+                                type="text"                        
+                            />
+                            <br />
+                            <br />
+                            <br />
+                            <TextField
+                                id="date"
+                                label=""
+                                type="date"                        
+                            />
+                            <br />
+                            <br />
+                           
+                            <TextField
+                                id="number"
+                                label="Celular"
+                                type="number"                        
+                            />
+                            <br />
+                            <br />
+                            <TextField
+                                id="text"
+                                label="Email"
+                                type="email"                        
+                            />
+                            <br />
+                            <br />
+            
+            
+                            
+            
+                            <Button color="primary" aria-label="add">
+                            <strong> Aceptar </strong>
+                        </Button>    
+                            <Button color="secondary" aria-label="add">
+                                <strong> Cancelar </strong>
+                            </Button>   
+                    </Card >
         );
     }
 }

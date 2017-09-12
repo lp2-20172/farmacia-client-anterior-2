@@ -7,6 +7,7 @@ import Venta from './Venta';
 import form from './venta/form';
 import Proveedor from './Proveedor';
 
+
 const routes = [
     {
         path: '/',
@@ -22,7 +23,7 @@ const routes = [
     {
         path: '/proveedor',
         sidebar: () => <div>proveedor!</div>,
-        main: () => <h2>proveedor</h2>
+        main: Proveedor
     },
     {
         path: '/counters',
