@@ -4,8 +4,10 @@ import Card, { CardHeader, CardContent } from 'material-ui/Card'
 import Avatar from 'material-ui/Avatar'
 import Typography from 'material-ui/Typography'
 import Button from 'material-ui/Button';
-import AddIcon from 'material-ui-icons/Add';
 import TextField from 'material-ui/TextField';
+import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table';
+import Paper from 'material-ui/Paper';
+
 
 import { getList } from '../actions/userAction'
 import { connect } from 'react-redux'
@@ -22,39 +24,78 @@ class User extends Component {
     }
 
     render() {
-        const {} = this.props
+        const {FlatButtonExampleSimple} = this.props
         return (
             <Card>
                 <CardHeader
                     avatar={
-                        <Avatar aria-label="Recipe" >
-                            Add
+                        <Avatar aria-label="Recipe">
+                            A
                             </Avatar>
                     }
-                    title="Agregar"
-                    subheader="Productos"/>
+                    title="Lista"
+                    subheader="Almacen"/>
 
                      <Typography component="p">
-                        q={this.props.q}
+                        Lista de Medicamentos/Productos{this.props.q}
                     </Typography>
 
                     <TextField
                         id="search"
-                        label="Search"
+                        label="Buscar Producto"
                         value={this.props.q}
                         onChange={this.change}
                         margin="normal"
                     />  
+                    <TextField
+                        id="search"
+                        label="Buscar Producto"
+                        /**value={this.props.q}
+                        onChange={this.change}**/
+                        margin="normal"
+                    />
              
                     
                     
-                    <Button color="secondary" aria-label="add">
-                        <strong>+Agregar</strong>
+                    <Button label="Secondary" secondary={true}>
+                        <strong>Buscar</strong>
                     </Button>
-                    <Button color="default" aria-label="add">
-                        <strong>Cancelar</strong>
-                    </Button>    
+                    <Button label="Default" aria-label="add">
+                        <strong>+Agregar Nuevo</strong>
+                    </Button>   
+
+                    <Paper style={{
+                            overflowX: 'auto',
+                    }}>
+                        <Table>
+                            <TableHead>
+                                <TableRow>
+                                    <TableCell>Codigo</TableCell>
+                                    <TableCell >Descripcion</TableCell>
+                                    <TableCell >Cantidad Total</TableCell>
+                                    <TableCell >Venta Unitaria</TableCell>
+                                    <TableCell >Opciones</TableCell>
+                                </TableRow>
+                            </TableHead>
+
+                            <TableBody>
+                                
+                                    <TableRow >
+                                        <TableCell numeric>203</TableCell>
+                                        <TableCell >antianalgesico</TableCell>
+                                        <TableCell >100</TableCell>
+                                        <TableCell >$ 3.50</TableCell>
+                                        <TableCell ><Button label="Default" aria-label="add">
+                        <strong>Editar</strong>
+                    </Button></TableCell>
+                                    </TableRow>
+                            
+                            </TableBody>
+                        </Table>
+                    </Paper> 
             </Card >
+
+
         );
     }
 }

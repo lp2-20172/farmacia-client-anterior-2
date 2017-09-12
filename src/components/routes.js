@@ -5,6 +5,7 @@ import Counter from './Counter';
 import User from './User';
 import Venta from './Venta';
 import form from './venta/form';
+import Proveedor from './Proveedor';
 
 const routes = [
     {
@@ -19,9 +20,9 @@ const routes = [
         main: About
     },
     {
-        path: '/one',
-        sidebar: () => <div>one!</div>,
-        main: () => <h2>One</h2>
+        path: '/proveedor',
+        sidebar: () => <div>proveedor!</div>,
+        main: () => <h2>proveedor</h2>
     },
     {
         path: '/counters',
