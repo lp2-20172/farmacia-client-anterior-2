@@ -6,6 +6,8 @@ import Typography from 'material-ui/Typography'
 import Button from 'material-ui/Button';
 import AddIcon from 'material-ui-icons/Add';
 import TextField from 'material-ui/TextField';
+import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table';
+import Paper from 'material-ui/Paper';
 
 
 
@@ -102,7 +104,36 @@ class Proveedor extends Component {
                             <Button color="secondary" aria-label="add">
                                 <strong> Cancelar </strong>
                             </Button>   
+                            <br />
+                            <br />
+                            <TextField
+                                id="search"
+                                label="Search"
+                                value={this.props.q}
+                                onChange={this.change}
+                                margin="normal"
+                            />
+                            <Paper style={{
+                            overflowX: 'auto',
+                    }}>
+                            <table>
+                                <TableHead>
+                                <TableRow>
+                                    <TableCell>#</TableCell>
+                                    <TableCell >Nombre</TableCell>
+                                    <TableCell >Apellidos</TableCell>
+                                    <TableCell >Empresa</TableCell>
+                                    <TableCell >Direccion</TableCell>
+                                    <TableCell >RUC</TableCell>
+                                    <TableCell >Fecha</TableCell>
+                                    <TableCell >Celular</TableCell>
+                                    <TableCell >Email</TableCell>
+                                </TableRow>
+                            </TableHead>
+                            </table>
+                            </Paper>
                     </Card >
+                    
         );
     }
 }
