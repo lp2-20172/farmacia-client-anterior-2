@@ -1,87 +1,167 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { CardContent } from 'material-ui/Card';
-import { connect } from 'react-redux'
-import { removeFromCart } from '../../actions/ventaAction';
-import List, {
-    ListItem,
-    ListItemAvatar,
-    ListItemSecondaryAction,
-    ListItemText,
-} from 'material-ui/List';
-import Avatar from 'material-ui/Avatar';
-import IconButton from 'material-ui/IconButton';
-import Typography from 'material-ui/Typography';
-import DeleteIcon from 'material-ui-icons/Delete';
-
-class ShoppingCart extends Component {
-
-    render() {
-        const { cart, removeFromCart } = this.props
+import Card, { CardHeader, CardContent } from 'material-ui/Card'
+import Avatar from 'material-ui/Avatar'
+import Typography from 'material-ui/Typography'
+import TextField from 'material-ui/TextField';
+import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table';
+import Paper from 'material-ui/Paper';
+import Button from 'material-ui/Button';
+import AddIcon from 'material-ui-icons/Add';
 
 
+const styles = theme => ({
+  container: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    margin: '400',
+
+  },
+  textField: {
+    marginLeft: theme.spacing.unit,
+    marginRight: theme.spacing.unit,
+    width: 500,
+    
+  },
+
+});
+
+
+class UsuarioList extends Component {
+   render() {
         return (
-
-            <CardContent >
-
-                <Typography type="headline">
-                    ShoppingCart List
-                </Typography>
-
-                <Typography type="subheading" color="secondary" >
-                Total: ${cart.reduce((sum, product) => sum + product.price, 0)}
-            </Typography>
-                <div >
-                    <List >
-                    {cart.map((d, index) =>
-                  <ListItem button  key={index}>
-                    <ListItemAvatar>
-                      <Avatar>
-                      <img src={d.image} alt={d.name} />
-                      </Avatar>
-                    </ListItemAvatar>
-                    <ListItemText
-                      primary={d.name+" $"+d.price+"  "}
-                      
+            <Card>
+                <CardHeader
+                    title="DATOS"
+                    subheader="CLIENTE"
+                />
+             
+                    <TextField
+                        id="Codigo"
+                        label="Codigo"                        
+                        type="number"
                     />
-                    <ListItemSecondaryAction>
-                      <IconButton aria-label="Delete" onClick={() => removeFromCart(d)}>
-                        <DeleteIcon />
-                      </IconButton>
-                    </ListItemSecondaryAction>
-                  </ListItem>,
-                )}
+                    <TextField
+                        id="precio"
+                        label="DNI"                        
+                        type="number"
+                    />
+                    <br />
+                    <TextField
+                        id="cantidad"
+                        label="Nombre"
+                        value={this.props.q}
+                        onChange={this.change}
+                        margin="normal"
+                    />
+                     <TextField
+                        id="cantidad"
+                        label="Apellido"
+                        value={this.props.q}
+                        onChange={this.change}
+                        margin="normal"
+                    />
+                    <br />
+                    
+                    <CardHeader
+                    title="DATOS"
+                    subheader="VENTA"
+                />
+                   
+                    <br />
+                    <TextField
+                        id="cantidad"
+                        label="Nro"
+                        defaultValue="Nro"
+                        value={this.props.q}
+                        onChange={this.change}
+                        margin="normal"
+                    />  
+                    <TextField
+                        id="date"
+                        label="FECHA"
+                        type="date"
+                        InputLabelProps={{
+                          shrink: true,
+                        }}
+                    />
+                        <TextField
+                          id="required"
+                          label="ATENDIDO POR:"
+                          defaultValue="JORGE GONSALES" 
+                          margin="normal"
+                        />
+                        <TextField
+                          id="required"
+                          label="PRODUCTO"
+                          defaultValue="Nombre" 
+                          margin="normal"
+                        />
+                        <TextField
+                          id="required"
+                          label="PRECIO"
+                          defaultValue="PRECIO" 
+                          margin="normal"
+                        />
+                         <TextField
+                        id="CANTIDAD"
+                        label="CANTIDAD"                        
+                        type="number"
+                        marginLeft="10"
+                    />
+                    <br />
+                    
+                    <br />
+                    <label>
+                        TIPO DE COMPROVANTE
+                        <select  onChange={this.handleChange}>
+                            <option value="COMPROVANTE">COMPROVANTE</option>
+                            <option value="TICKET">TICKET</option>
+                            <option value="BOLETA">BOLETA</option>
+                            <option value="FACTURA">FACTURA</option>
+                        </select>
+                        </label>
+                        <br />
+                        <br />
+                    <Button raised color="primary" >
+                            CONFIRMAR
+                          </Button>
+                          <Button raised color="accent" >
+                            CANCELAR
+                          </Button>
+           
 
-                    </List>
-                </div>
+                
+                <Typography type="subheading" color="secondary">
+                
+                <p><strong>LISTA DE VENTAS </strong></p>
+                
+                <Paper>
+                        <Table classclassName="texto">
+                            <TableHead>
+                                <TableRow>
+                                    <TableCell>#</TableCell>
+                                    <TableCell >CLIENTE</TableCell>
+                                    <TableCell >PRODUCTO</TableCell>
+                                    <TableCell >CANTIDAD</TableCell>
+                                    <TableCell >IMPORTE</TableCell>
+                                </TableRow>
+                            </TableHead>
 
+                            <TableBody>
+                                    <TableRow>
+                                        <TableCell ></TableCell>                                        
+                                    </TableRow>
+                                
+                            </TableBody>
+                        </Table>
+                    </Paper>
 
-            </CardContent>
+                </Typography>
+                 </Card >
+            
+            
         );
     }
 }
-ShoppingCart.propTypes = {
-    removeFromCart: PropTypes.func,
-    cart: PropTypes.array
-}
-
-function mapStateToProps(state) {
-    return {
-        cart: state.venta.cart
-    }
-}
-
-function mapDispatchToProps(dispatch) {
-    return {
-        removeFromCart: (product) => {
-
-            console.log("REMOVE_FROM_CART " + product.name)
-            dispatch(removeFromCart(product))
-
-
-        }
-    }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(ShoppingCart)
-
+export default UsuarioList;

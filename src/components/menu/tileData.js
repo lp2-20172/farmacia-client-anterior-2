@@ -65,7 +65,7 @@ export const otherMailFolderListItems = (
             <ListItemIcon>
                 <ReportIcon />
             </ListItemIcon>
-            <ListItemText primary="Spam" />
+            <ListItemText primary="SALIR" />
         </ListItem>
     </div>
 );
