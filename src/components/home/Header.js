@@ -22,7 +22,10 @@ class Header extends Component {
             <CardContent>
 				
                 <Typography type="headline">
-				
+				<div id="slideShowImages">
+                <img src="farmacenter" alt="Slide 1" />
+                
+               </div> 
 				
                     
                 </Typography>
