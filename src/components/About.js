@@ -5,11 +5,9 @@ import React from 'react';
 import Card, { CardHeader, CardContent, CardActions } from 'material-ui/Card';
 
 import Avatar from 'material-ui/Avatar';
-import IconButton from 'material-ui/IconButton';
 import Typography from 'material-ui/Typography';
+import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table';
 import FavoriteIcon from 'material-ui-icons/Favorite';
-import ShareIcon from 'material-ui-icons/Share';
-
 
 class About extends React.Component {
     render() {
@@ -23,7 +21,7 @@ class About extends React.Component {
                             </Avatar>
                         }
                         title="FARMACENTER "
-                        subheader="September 7 2016"
+                        subheader="September 2017"
                     />
 
                     <CardContent>
@@ -31,15 +29,34 @@ class About extends React.Component {
                             si vosotros quereis tener mas tendencia compartid esta publicacion
                         </Typography>
                     </CardContent>
-                    <CardActions disableActionSpacing>
-                        <IconButton aria-label="Add to favorites">
-                            <FavoriteIcon />
-                        </IconButton>
-                        <IconButton aria-label="Share">
-                            <ShareIcon />
-                        </IconButton>
+                    <center>
+                    <CardActions>
+                        
+
+                        <Table>
+                            <TableHead>
+                                <TableRow>
+                                    <TableCell>#</TableCell>
+                                    <TableCell >Nombre</TableCell>
+                                    <TableCell >Email</TableCell>
+                                </TableRow>
+                            </TableHead>
+
+                            <TableBody>
+                                
+                                    <TableRow >
+                                        <TableCell numeric>1</TableCell>
+                                        <TableCell >DAvid</TableCell>
+                                        <TableCell >davidcskljgnv</TableCell>
+                                    </TableRow>
+                                )}
+                            </TableBody>
+                        </Table>
 
                     </CardActions>
+
+                    </center>
+
 
                 </Card>
             </div>

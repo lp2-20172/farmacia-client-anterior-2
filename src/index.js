@@ -12,11 +12,14 @@ import store from './store'
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 import green from 'material-ui/colors/green';
 import red from 'material-ui/colors/red';
+import blue from 'material-ui/colors/blue';
+import pink from 'material-ui/colors/pink';
+import purple from 'material-ui/colors/purple';
 import './index.css'
 const theme = createMuiTheme({
     palette: {
         type: 'dark',
-        primary: red, // Purple and green play nicely together.
+        primary: pink, // Purple and green play nicely together.
         secondary: {
             ...green,
             A400: '#00e677',
